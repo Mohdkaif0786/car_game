@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  width: 100%;
+  background-image: url("background.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: brightness(90%);
+}
+.hidden {
+  display: none;
+}
+.car,
+.enemy {
+  width: 60px;
+  height: 90px;
+  position: absolute;
+  bottom: 120px;
+  color: white;
+  border-radius: 13px;
+  /* border: 2px solid red; */
+  z-index: 4;
+}
+.en_1 {
+  width: 60px;
+  height: 90px;
+  background-image: url("image/enemy_crop.png");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-size:100% 100%;
+}
+.en_2{
+  width: 60px;
+  height: 90px;
+  background-image: url("image/enemy3.png");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-size:100% 100%;
+  
+} 
+.en_3{
+  width: 60px;
+  height: 90px;
+  background-image:url("image/enemy2.png");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-size:100% 100%;
+}
+
+.car {
+  background-image: url("car3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.game_area {
+  width: 400px;
+  height: 100vh;
+  background: #2d3436;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+  border-right: 10px dashed #c8d6e5;
+  border-left: 10px dashed #c8d6e5;
+}
+.line {
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  left: 195px;
+  background-color: white;
+}
+.score {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 300px;
+  height: 60px;
+  background-color: cadetblue;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: fantasy;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.start_screen {
+  width: 410px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: carfont;
+  word-spacing: 3;
+  padding: 13px;
+  transform: translate(-50%, -50%);
+  background-color: orangered;
+  text-align: center;
+  box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  cursor: pointer;
+}
